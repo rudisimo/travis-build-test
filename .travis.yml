@@ -13,7 +13,7 @@ before_script:
   - sudo sed -i -e "s,/var/www,$(pwd)/public,g" /etc/apache2/sites-available/default
   - sudo service apache2 restart
   - composer self-update
-  - composer install --dev --prefer-dist
+  - composer install --dev --prefer-source
 
 script:
   - curl -v -L "http://localhost:80/"
