@@ -5,7 +5,11 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.2.*",
-        "behat/behat": "2.4.*"
+        "behat/behat": "2.4.*",
+        "behat/mink": "1.4.*",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*"
     },
     "minimum-stability": "stable",
     "config": {

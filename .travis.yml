@@ -14,6 +14,7 @@ before_script:
   - sudo service apache2 restart
   - composer self-update
   - composer install --dev --prefer-source
+  - cp config/behat.yml.dist config/behat.yml
 
 script:
-  - php bin/behat
+  - php bin/behat features/
