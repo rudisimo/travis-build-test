@@ -8,7 +8,7 @@ services:
 
 before_script:
   - sudo apt-get update > /dev/null
-  - sudo apt-get install -y --force-yes apache2 libapache2-mod-php5 php5-curl php5-mysql php5-intl
+  - sudo apt-get install -y --force-yes apache2 libapache2-mod-php5 php5-apc php5-curl php5-mysql php5-intl php5-openssl php5-xdebug
   - sudo a2enmod rewrite
   - sudo sed -i -e "s,/var/www,$(pwd)/public,g" /etc/apache2/sites-available/default
   - sudo service apache2 restart
